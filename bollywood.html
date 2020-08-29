@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz time</title>
+    <link rel="stylesheet" href="cricket.css">
+  </head>
+  <body>
+    <header>
+        <div class="block">
+            <h3> BOLLYQUIZ</h3>
+            <p>LET'S GET QUIZZING!</p>
+        </div>
+        <img src="images/quiz.svg" alt="">
+    </header>
+    <div class="back-button">
+        <a href="main.html"><-Home</a>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="card">
+                <div class="imgbx" data-text="Que1">
+                    <img src="images/man.svg" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Q1</h3>
+                        <p id="q1-text">Which Bollywood personality has launched an online platform called ‘Pravasi Rojgar’ to help migrants find job opportunities?</p>
+                        <div class="options">
+                            <button id="1q1" class="1q1" onclick="submit('q1',this)">a.Sonu Sood</button>
+                            <button id="2q1" class="2q1" onclick="submit('q1',this)">b.Salman</button>
+                            <button id="3q1" class="3q1" onclick="submit('q1',this)">c.SRK</button>
+                            <button id="4q1" class="4q1" onclick="submit('q1',this)">d.Ranbir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx" data-text="Que2">
+                    <img src="images/man.svg" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Q2</h3>
+                        <p id="q2-text">Fill in the blank ‘I can talk English, I can walk English, I can _____ English’</p>
+                        <div class="options">
+                        <button id="1q2" class="1q1" onclick="submit('q2',this)">a.Breath</button>
+                        <button id="2q2" class="2q2" onclick="submit('q2',this)">b.Laugh</button>
+                        <button id="3q2" class="3q2" onclick="submit('q2',this)">c.Eat</button>
+                        <button id="4q2" class="4q2" onclick="submit('q2',this)">d.Sleep</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx" data-text="Que3">
+                    <img src="images/man.svg" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Q3</h3>
+                        <p id="q3-text">Who is Gabbar talking to when he asks ‘Kitne Aadmi The’?</p>
+                        <div class="options">
+                        <button id="1q3" class="1q3" onclick="submit('q3',this)">a.SAMBHA</button>
+                        <button id="2q3" class="2q3" onclick="submit('q3',this)">b.KAALIA</button>
+                        <button id="3q3" class="3q3" onclick="submit('q3',this)">c.THAKUR</button>
+                        <button id="4q3" class="4q3" onclick="submit('q3',this)">d.JAI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbx" data-text="Que4">
+                    <img src="images/man.svg" alt="">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Q4</h3>
+                        <p id="q4-text">In Gangs of Wasseypur who says ’Beta tumse na ho payega’ ?</p>
+                        <div class="options">
+                        <button id="1q4" class="1q4" onclick="submit('q4',this)">a.SARDAR KHAN</button>
+                        <button id="2q4" class="2q4" onclick="submit('q4',this)">b.RAMADHIR SINGH</button>
+                        <button id="3q4" class="3q4" onclick="submit('q4',this)">c.FAIZAL KHAN</button>
+                        <button id="4q4" class="4q4" onclick="submit('q4',this)">d.SHAMSHAD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div id="firework-content"></div>
+          <h1>Final Score</h1>
+          <h2 id="score"></h2>
+          <div class="row">
+            <Button class="popup-button" onclick="window.location.href='cricket.html';">Restart</Button>
+            <button class="popup-button" onclick="window.location.href='main.html';">Home</button>
+          </div>
+        </div>
+    </div>
+    <div class="final-submit">
+        <Button class="btn-grad" onclick="finalsubmit()">Submit</Button>
+    </div>
+    <script src="bollywood.js"></script>
+  </body>
+  </html>
